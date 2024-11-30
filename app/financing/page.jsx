@@ -84,38 +84,7 @@ const page = () => {
 export default page
 
 
-const GridImageTextList = ({ data }) => (
-    <section className="max-w-6xl mx-auto py-16 px-6 gap-8 items-center flex text-white">
-        {/* Text Content */}
-        <div className="space-y-6">
-            <h2 className="text-5xl font-bold text-primary">{data.title}</h2>
 
-            {/* Dynamic List Rendering */}
-            <ul className="list-disc pl-5  text">
-                {data.points.map((point, index) => (
-                    <li key={index}>
-                        <strong className="text-primary text-2xl">{point?.title}</strong>
-                        <p>{point.text} </p>
-
-                    </li>
-                ))}
-            </ul>
-
-
-            {/* CTA Button */}
-            <div className="mt-20">
-                <Link href={'/contact'} className="bg-primary py-3 px-6 rounded-full text-black font-bold">
-                    Get In Touch With Us!
-                </Link>
-            </div>
-        </div>
-
-        {/* Image Content */}
-        <div className="h-[600px] w-full bg-gray-200 rounded-lg shadow-lg">
-            {/* Placeholder for the image */}
-        </div>
-    </section>
-);
 const GridImageText = ({ data }) => (
     <section className="max-w-6xl mx-auto py-16 px-6  gap-12 items-center grid grid-cols-2 text-white ">
         <div className={`${data.orientation == 'left' && 'order-2'} h-[600px] w-full bg-gray-200 rounded-lg shadow-lg`}></div>
@@ -129,63 +98,4 @@ const GridImageText = ({ data }) => (
             </div>
         </div>
     </section>
-);
-const GridCards = ({ data }) => (
-    <section className="bg-secondary py-12 relative ">
-        <h3 className="text-primary text-center pb-8 text-3xl " >{data.title}</h3>
-        <div className="grid grid-cols-3 gap-6 max-w-6xl mx-auto" >
-            {
-                data.points.map((i, z) => (
-                    <div key={z} className="bg-black p-10 border border-transparent z-20 hover:border-primary transition-all duration-300 rounded-md text-center flex flex-col items-center" >
-                        {/* <div className="flex-shrink-0 " >{IconSvg.RoofReplacement}</div> */}
-                        <h3 className="text-2xl" >{i.title}</h3>
-                        <p className="text-white/70 text-sm">{i.text}</p>
-                    </div>
-                ))
-            }
-        </div>
-        <div className=" w-[300px] h-[300px] bg-primary/80 z-10 absolute -bottom-20 left-1/2 transform -translate-x-1/2 rounded-full blur-[200px]   " />
-    </section>
-)
-const GridCardsImage = ({ data }) => (
-    <section className="bg-secondary py-12 relative ">
-        <h3 className="text-primary text-center pb-8 text-5xl " >{data.title}</h3>
-        <div className="grid grid-cols-3 gap-6 max-w-6xl mx-auto" >
-            {
-                data.points.map((i, z) => (
-                    <div key={z} className="bg-black  border border-transparent z-20 hover:border-primary transition-all duration-300 rounded-md text-center flex flex-col items-center" >
-                        <div className=" h-[200px] w-full  rounded-md overflow-hidden relative" >
-                            <Image src={'/images/shingles/shingle.webp'} layout="fill" className="p-4 rounded-3xl" alt="shingle" />
-                        </div>
-                        <div className="p-10">
-                            <h3 className="text-2xl" >{i.title}</h3>
-                            <p className="text-white/70 text-sm">{i.text}</p>
-                        </div>
-                    </div>
-                ))
-            }
-        </div>
-        <div className=" w-[300px] h-[300px] bg-primary/80 z-10 absolute -bottom-20 left-1/2 transform -translate-x-1/2 rounded-full blur-[200px]   " />
-    </section>
-)
-const ParallaxImageText = ({ data }) => (
-    <div
-        className={`p-12 flex items-center  justify-center text-center text-white bg-cover bg-center bg-fixed bg-[url('/images/hero.jpg')] relative  `}>
-        <div className="inset-0 absolute bg-black/80" />
-        <div className="p-8 rounded-lg max-w-5xl z-10 ">
-            <h2 className="text-4xl font-bold mb-4">{data.title}</h2>
-            <p className="text-lg">{data.text}</p>
-        </div>
-    </div>
-);
-const TextCentered = ({ data }) => (
-    <div
-        className={`p-12 flex items-center min-h-[40vh] justify-center text-center text-white bg-secondary relative  `}>
-
-        <div className="p-8 rounded-lg max-w-5xl z-20  ">
-            <h2 className="text-4xl font-bold mb-4">{data.title}</h2>
-            <p className="text-lg">{data.text}</p>
-        </div>
-        <div className=" w-[300px] h-[300px] bg-primary/80 z-10 absolute -bottom-32 left-1/2 transform -translate-x-1/2 rounded-full blur-[200px]   " />
-    </div>
 );
