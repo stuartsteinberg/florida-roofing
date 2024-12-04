@@ -33,7 +33,7 @@ const page = () => {
                 <div className="bg-gradient-to-b to-black/90 from-black/50 absolute w-full h-full" />
                 <div className="flex flex-col w-full h-full justify-center items-center z-10 relative  ">
                     <div className="flex flex-col gap-2 max-w-6xl mx-auto " >
-                        <p className="font-bold text-primary" >Loan Solution</p>
+                        <p className="font-bold " >Loan Solution</p>
                         <h1 className="text-5xl" >Roof Financing Made Simple with Florida Elite Roofing</h1>
                         <hr className="h-1 mt-2  border-none  bg-primary" />
                         <div className="max-w-4xl" >
@@ -53,7 +53,7 @@ const page = () => {
             />
             <section className=" bg-secondary text-white ">
                 <div className="max-w-6xl mx-auto py-12 ">
-                    <h2 className="text-4xl text-center text-primary font-semibold " >Our Financing Options</h2>
+                    <h2 className="text-4xl text-center  font-semibold " >Our Financing Options</h2>
                     <p className='text-center text-lg my-6 ' >Unlock the possibilities with Florida Elite Roofings flexible financing solutions! We offer a range of options tailored to meet your budget and roofing needs</p>
                     <div className="grid grid-cols-3 gap-6 mt-10">
                     {financingOptions.map((option, index) => (
@@ -89,7 +89,7 @@ const GridImageText = ({ data }) => (
     <section className="max-w-6xl mx-auto py-16 px-6  gap-12 items-center grid grid-cols-2 text-white ">
         <div className={`${data.orientation == 'left' && 'order-2'} h-[600px] w-full bg-gray-200 rounded-lg shadow-lg`}></div>
         <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-primary">{data.title}</h2>
+            <h2 className="text-4xl font-bold ">{data.title}</h2>
             <p>{data.text}</p>
             <div className="mt-20" >
                 <Link href={'/contact'} className="bg-primary py-3 px-6 rounded-full text-black font-bold ">

@@ -8,7 +8,7 @@ const page = () => {
                 <div className="bg-gradient-to-b to-black/90 from-black/50 absolute w-full h-full" />
                 <div className="flex flex-col w-full h-full justify-center items-center z-10 relative  ">
                     <div className="flex flex-col gap-2 max-w-6xl mx-auto " >
-                        <p className="font-bold text-primary" > Excellence in Every Roof</p>
+                        <p className="font-bold " > Excellence in Every Roof</p>
                         <h1 className="text-5xl" >Florida Elite Roofing Gallery</h1>
                         <hr className="h-1 mt-2  border-none  bg-primary" />
                         <div className="max-w-4xl" >
