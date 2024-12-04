@@ -56,14 +56,14 @@ export default function Footer() {
           </div>
           <div className="text-center">
             <a href="tel:" className="hover:underline font-semibold text-sm flex items-center gap-2">
-              <MdPhone size={16} className='text-primary' />   1 (903) 699-6871
+              <MdPhone size={16} className='' />   1 (903) 699-6871
             </a>
           </div>
           <div className="flex justify-center space-x-4 mt-4">
             {/* Facebook */}
             <a
               href="https://facebook.com"
-              className="text-primary "
+              className=" "
               aria-label="Facebook"
               target="_blank"
               rel="noopener noreferrer"
@@ -74,7 +74,7 @@ export default function Footer() {
             {/* Instagram */}
             <a
               href="https://instagram.com"
-              className="text-primary "
+              className=" "
               aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
@@ -85,7 +85,7 @@ export default function Footer() {
             {/* Yelp */}
             <a
               href="https://yelp.com"
-              className="text-primary "
+              className=" "
               aria-label="Yelp"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,11 +98,11 @@ export default function Footer() {
           {
             navigationItems.map((category) => (
               <div className=" w-fit" key={category.parent}>
-                <h2 className="font-bold text-lg mb-2 underline underline-offset-2 text-primary ">{category.parent}</h2>
+                <h2 className="font-bold text-lg mb-2 underline underline-offset-2  ">{category.parent}</h2>
                 <ul>
                   {category.children.map((item) => (
                     <li key={item.label}>
-                      <a href={item.href} className="hover:text-primary">
+                      <a href={item.href} className="hover:">
                         {item.label}
                       </a>
                     </li>

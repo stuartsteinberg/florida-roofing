@@ -30,7 +30,7 @@ export default async function BlogList() {
     const posts = await client.fetch(query);
     return (
         <> 
-            <div className="h-[35vh] w-full bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat relative text-white border-b-2 border-primary">
+            <div className="h-[35vh] w-full bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat relative  font-bold border-b-2 border-primary">
                 <div className="bg-gradient-to-b to-black/90 from-black/50 absolute w-full h-full" />
                 <div className="flex flex-col w-full h-full justify-center items-center z-10 relative  ">
                     <div className="flex flex-col gap-2 max-w-6xl mx-auto " >
@@ -42,19 +42,19 @@ export default async function BlogList() {
             <div className="max-w-6xl mx-auto grid  sm:grid-cols-2  md:grid-cols-3 my-20 gap-10">
                 {posts.map((post) => (
                     <div key={post._id} className="bg-white border border-transparent p-2 rounded-md hover:border-primary group " >
-                        <div className="h-[250px] relative overflow-hidden  ">
-                            <Image src={post.mainImage?.asset?.url} layout="responsive" className="group-hover:scale-125 transition-all duration-300 " width={100} height={100} alt={post.mainImage?.alt || ''} />
+                        <div className="h-[230px] relative overflow-hidden  ">
+                            <Image src={post.mainImage?.asset?.url} layout="responsive" className="group-hover:scale-125 transition-all duration-300 " width={100} height={50} alt={post.mainImage?.alt || ''} />
                         </div>
                         <div className="p-4 flex flex-col gap-2 " >
-                            <h2 className="text-xl" >{post.title}</h2>
-                            <p>
+                            <h2 className="text-xl text-black font-semibold" >{post.title}</h2>
+                            <p className="text-black" >
                                 {post.body && post.body.map((block, index) => (
                                     <span key={index}>{block.children[0]?.text}</span>
                                 ))}
                             </p>
-                            <Link href={`/blogs/${post.slug.current}`} className="text-primary " >Read More</Link>
+                            <Link href={`/blogs/${post.slug.current}`} className="text-black hover:underline" >Read More</Link>
                         </div>
-                        <p className="py-3 border-t text-center" >{new Date(post.publishedAt).toDateString()}</p>
+                        <p className="py-3 border-t text-center text-black " >{new Date(post.publishedAt).toDateString()}</p>
                     </div>
                 ))}
             </div>

@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section className=" bg-secondary text-white ">
     <div className="max-w-6xl mx-auto py-12 ">
-      <h2 className="text-4xl text-center text-primary font-semibold " >Florida Roofing Company for Your Roofing Services</h2>
+      <h2 className="text-4xl text-center font-semibold " >Florida Roofing Company for Your Roofing Services</h2>
       <div className="grid grid-cols-6 gap-6 mt-10">
         <div className="border border-transparent hover:border-primary transition-all duration-300 rounded-lg shadow-lg overflow-hidden col-span-3 bg-black p-10">
           {/* Image Placeholder */}
@@ -32,7 +32,7 @@ const Services = () => {
                 and low-rate payments.
               </li>
             </ul>
-            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full text-black mt-10" >
+            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full  mt-10" >
               Learn More
             </Link>
           </div>
@@ -60,7 +60,7 @@ const Services = () => {
             </ul>
 
             {/* Learn More Link */}
-            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full text-black mt-10">
+            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full  mt-10">
               Learn More
             </Link>
           </div>
@@ -88,7 +88,7 @@ const Services = () => {
             </ul>
 
             {/* Learn More Link */}
-            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full text-black mt-10">
+            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full  mt-10">
               Learn More
             </Link>
           </div>
@@ -116,7 +116,7 @@ const Services = () => {
             </ul>
 
             {/* Learn More Link */}
-            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full text-black mt-10">
+            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full  mt-10">
               Learn More
             </Link>
           </div>
@@ -144,7 +144,7 @@ const Services = () => {
             </ul>
 
             {/* Learn More Link */}
-            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full text-black mt-10">
+            <Link href={'/'} className="bg-primary py-2 px-4 w-fit rounded-full  mt-10">
               Learn More
             </Link>
           </div>

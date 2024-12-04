@@ -1,6 +1,7 @@
 import TopBar from "@/components/TopBar";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 
 
@@ -12,7 +13,7 @@ export default function AppLayout({ children }) {
         <NavBar />
       </header>
       {children}
-      <section className="py-12 relative text-white">
+      <section className="py-12 relative ">
         <div className="absolute inset-0  bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat filter brightness-[0.3] h-full " />
         <div className="max-w-6xl mx-auto flex z-30 relative gap-10 ">
           <div className="h-[300px]  bg-gray-100 w-[600px] rounded-2xl ">
@@ -25,11 +26,9 @@ export default function AppLayout({ children }) {
             <p className="text-lg">
               Ready to give your home the roofing company advantage it deserves? Great! Just fill out our quick form and we’ll take it from there. Don’t let another storm season pass by without the superior protection of Florida Elite Roofing.
             </p>
-
-            {/* CTA Button */}
-            <button className="bg-primary hover:bg-primary-dark text-black font-bold py-3 px-6 rounded-full w-fit mt-4">
+            <Link href={'tel:+9233553455'} className="bg-primary hover:bg-primary-dark  font-bold py-3 px-6 rounded-full w-fit mt-4 " >
               Contact us Now!
-            </button>
+            </Link>
           </div>
 
         </div>

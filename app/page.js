@@ -14,7 +14,7 @@ export default function Home() {
     <AppLayout> 
     <main className="bg-black">
       <Hero />
-      <section className=" text-white border-b-2 border-primary">
+      <section className="  border-b-2 border-primary">
         <div className=" max-w-6xl mx-auto  py-20 " >
           <div className="grid grid-cols-2 gap-10 items-center" >
             <div className="w-full h-full p-10" >
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-4  ">
-              <h2 className="text-4xl text-primary leading-loose  " >Here’s Our Pledge To You...</h2>
+              <h2 className="text-4xl  leading-loose  " >Here’s Our Pledge To You...</h2>
 
               <p>We are Florida Elite Roofing, and we’re leaders in keeping roofs over heads with a comprehensive service. We have protected many homes and businesses in Florida from harsh weather conditions. These conditions include strong sun, storms, and heavy rain that hit our roofs all year.</p>
 
@@ -50,7 +50,7 @@ export default function Home() {
         {/* Text Content */}
         <div className="space-y-6">
           {/* Heading */}
-          <h2 className="text-5xl font-bold text-primary">Your Ultimate Roofing Advantage</h2>
+          <h2 className="text-5xl font-bold ">Your Ultimate Roofing Advantage</h2>
           {/* Subheading */}
           <p className="text-lg">
             With our expert services, you get a comprehensive approach to roof care that guides you from initial roof inspection to flawless finish. Here&apos;s what you secure when you choose us:
@@ -59,15 +59,15 @@ export default function Home() {
           {/* List of Items */}
           <ul className="list-disc pl-5 space-y-2 flex flex-col gap-3">
             <li>
-              <strong className="text-primary text-2xl" >Solid Guidance Every Step of the Way</strong> <br />
+              <strong className=" text-2xl" >Solid Guidance Every Step of the Way</strong> <br />
               Our team walks you through the entire roof installation or repair process, so you’re never in the dark.
             </li>
             <li>
-              <strong className="text-primary text-2xl" >A Circle of Professionals at Your Service</strong> <br />
+              <strong className=" text-2xl" >A Circle of Professionals at Your Service</strong> <br />
               We bring together top roof contractors in Florida, each one ready to pitch in and ensure swift, efficient service.
             </li>
             <li>
-              <strong className="text-primary text-2xl" >Your Personalized Roof Success Plan</strong> <br />
+              <strong className=" text-2xl" >Your Personalized Roof Success Plan</strong> <br />
               Armed with our insight, you’ll have the blueprint you need to guarantee the longevity and durability of your roof.
             </li>
           </ul>
@@ -79,7 +79,7 @@ export default function Home() {
 
           {/* CTA Button */}
           <div className="mt-20" >
-            <Link href={'/contact'} className="bg-primary py-3 px-6 rounded-full text-black font-bold ">
+            <Link href={'/contact'} className="bg-primary py-3 px-6 rounded-full  font-bold ">
               Get In Touch With Us!
             </Link>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
       <section className="bg-secondary  py-16 px-6  text-white relative z-30 ">
         <div className="max-w-6xl mx-auto  ">
           <div className="text-center flex flex-col gap-4  ">
-            <h3 className="text-primary text-5xl font-semibold ">Cities We Serve</h3>
+            <h3 className=" text-5xl font-semibold ">Cities We Serve</h3>
             <p>Florida Elite Roofing has got you covered! Whether you need a roof installation or an <br /> essential roof inspection, we are just a call away. Check out our service areas:</p>
           </div>
           <div className="w-full mt-10 border-primary border" >
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-6 mt-10 gap-4">
             <div className="border border-white/20 hover:border-primary bg-black  rounded-lg shadow-lg p-6 flex  gap-4 col-span-2">
-              <div className="text-primary">
+              <div className="">
                 <MdLocationPin size={56} />
               </div>
               <div className=" ">
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
             <div className="border border-white/20 hover:border-primary bg-black rounded-lg shadow-lg p-6 flex gap-4 col-span-2">
               {/* Icon */}
-              <div className="text-primary">
+              <div className="">
                 <MdLocationPin size={56} />
               </div>
 
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
             <div className="border border-white/20 hover:border-primary bg-black rounded-lg shadow-lg p-6 flex gap-4 col-span-2">
               {/* Icon */}
-              <div className="text-primary">
+              <div className="">
                 <MdLocationPin size={56} />
               </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             <div className="border border-white/20 hover:border-primary bg-black rounded-lg shadow-lg p-6 flex gap-4 col-span-3 ">
               {/* Icon */}
-              <div className="text-primary">
+              <div className="">
                 <MdLocationPin size={56} />
               </div>
 
@@ -155,7 +155,7 @@ export default function Home() {
             </div>
             <div className="border border-white/20 hover:border-primary bg-black rounded-lg shadow-lg p-6 flex gap-4 col-span-3">
               {/* Icon */}
-              <div className="text-primary">
+              <div className="">
                 <MdLocationPin size={56} />
               </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center py-12">
-            <h2 className="text-3xl font-bold text-primary ">Don&apos;t see your town listed?</h2>
+            <h2 className="text-3xl font-bold  ">Don&apos;t see your town listed?</h2>
             <p className="mt-4 text-lg">
               Reach out! We stretch our services across the Sunshine State, bringing professional roof repairs and installations to your doorstep.
             </p>
@@ -186,40 +186,44 @@ export default function Home() {
 
 function Hero() {
   return (
-    <div className="h-screen w-full bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat relative text-white border-b-2 border-primary">
-      <div className="bg-gradient-to-b to-black/90 from-black/40 absolute w-full h-full " />
-      <div className="flex w-full h-full justify-center items-center">
-        <div className="grid grid-cols-2 z-10  max-w-6xl mx-auto p-4 ">
-          <div className="flex flex-col p-2 gap-4 justify-center  ">
-            <h1 className="text-6xl font-bold text-primary">
-              Meet The Best Roofing Company in Florida!
-            </h1>
-            <p >
-              For a reliable roofing company in Florida that provides quality roofing, pay attention here. Reach your goals quickly while feeling safe and calm throughout the     process.
-            </p>
-            <div className="grid grid-cols-3 text-lg">
-              <div className="flex-col flex  text-center items-center  ">
-                <MdRoofing size={46} className="text-primary" />
-                <p>Maximize your<br /> Roof&apos;s Value</p>
-              </div>
-              <div className="flex-col flex  text-center items-center ">
-                <BiSolidTimer size={52} className="text-primary" />
-                <p>Get it Done <br /> Quickly!</p>
-              </div>
-              <div className="flex-col flex  text-center items-center ">
-                <RiVerifiedBadgeFill size={46} className="text-primary" />
-                <p>Keep Your <br />Peace of Mind!</p>
-              </div>
-
+    <div className="min-h-screen flex flex-col justify-center items-center w-full bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat relative text-white border-b-2 border-primary ">
+    {/* Background Gradient Overlay */}
+    <div className="bg-gradient-to-b to-black/90 from-black/40 absolute w-full h-full" />
+  
+    {/* Content Container */}
+    <div className="flex w-full h-full justify-center items-center   mt-24 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 z-10 max-w-6xl mx-auto p-4 gap-8">
+        {/* Left Content */}
+        <div className="flex flex-col p-4 gap-4 justify-center text-center lg:text-left ">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            Meet The Best Roofing Company in Florida!
+          </h1>
+          <p className="text-sm md:text-base lg:text-lg">
+            For a reliable roofing company in Florida that provides quality roofing, pay attention here. Reach your goals quickly while feeling safe and calm throughout the process.
+          </p>
+          <div className="grid grid-cols-3 gap-4 text-sm md:text-base lg:text-lg">
+            <div className="flex flex-col text-center items-center">
+              <MdRoofing size={36}  />
+              <p>Maximize your<br /> Roof&apos;s Value</p>
             </div>
-
+            <div className="flex flex-col text-center items-center">
+              <BiSolidTimer size={36}  />
+              <p>Get it Done <br /> Quickly!</p>
+            </div>
+            <div className="flex flex-col text-center items-center">
+              <RiVerifiedBadgeFill size={36} />
+              <p>Keep Your <br />Peace of Mind!</p>
+            </div>
           </div>
-          <div className="justify-center items-center flex   text-white  backdrop-blur-lg rounded-lg " >
-            <Form />
-          </div>
+        </div>
+  
+        {/* Right Content */}
+        <div className="flex justify-center items-center bg-white/20 p-6 rounded-lg backdrop-blur-lg">
+          <Form />
         </div>
       </div>
     </div>
+  </div>
   )
 }
 
@@ -268,7 +272,7 @@ function Form() {
           <textarea required className="w-full mt-2  px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-primary  shadow-sm rounded-lg"></textarea>
         </div>
         <button
-          className="w-full px-4 py-2  text-black font-medium bg-primary  hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
+          className="w-full px-4 py-2  font-medium bg-primary   rounded-lg duration-150"
         >
           Submit
         </button>
