@@ -2,6 +2,7 @@ import NotFound from "@/components/NotFound";
 import Services from "@/components/Services";
 import TestimonialsSlider from "@/components/Testimonials";
 import { pagesData } from "@/data/pages";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,6 +47,10 @@ const Page = ({ params }) => {
 
   return (
     <main className="text-white">
+      <Head>
+        <title>{pageData.title}</title>
+        <meta name="description" content={pageData.subtitle} />
+      </Head>
       <Header data={pageData} />
       {pageData.sections.map((section, index) => {
         const SectionComponent = sectionsMap[section.componentName];

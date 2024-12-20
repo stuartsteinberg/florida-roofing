@@ -70,15 +70,12 @@ export default function NavBar() {
             rounded-md  gap-y-6  items-center flex absolute  -translate-y-[-60%] left-1/2 -translate-x-[50%]   flex-col justify-center w-full transition-all duration-300 ${open ?  'min-h-fit p-2 bg-white' : 'h-0 w-0 p-0' }   text-black overflow-hidden`}>
           {navigation_links.map((item, index) => (
            <li key={index} className="text-sm group relative w-full md:w-fit whitespace-nowrap">
-           {/* Parent Link */}
            <Link
              href={item.href}
              className="hover:underline underline-offset-1 decoration-black lg:font-bold block"
            >
              {item.label}
            </Link>
-         
-           {/* Submenu */}
            {item.sub_menu && (
              <div className="absolute md:left-0 mt-2 z-10 ">
                <ul className="opacity-0 group-hover:opacity-100 rounded-md shadow-md mt-2 transition-all duration-300 bg-secondary border border-white/10">

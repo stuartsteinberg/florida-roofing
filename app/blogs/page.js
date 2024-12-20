@@ -1,5 +1,6 @@
 import AppLayout from "@/components/AppLayout";
 import { client } from "@/sanity/lib/client";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,6 +31,23 @@ export default async function BlogList() {
     const posts = await client.fetch(query);
     return (
         <> 
+              <Head>
+                <title>Blog - Florida Roofing | Expert Tips & Guides</title>
+                <meta name="description" content="Discover expert roofing tips, guides, and updates on Florida Roofing's blog. Stay informed about roofing maintenance, materials, and trends." />
+                <meta name="keywords" content="Florida roofing blogs, roofing tips, roof maintenance, roof repair guides, roofing materials, Florida roof trends" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Florida Roofing" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Blog - Florida Roofing | Expert Tips & Guides" />
+                <meta property="og:description" content="Explore expert roofing tips and guides. Florida Roofing's blog keeps you updated on roofing trends, maintenance advice, and more." />
+                <meta property="og:url" content="https://florida-roofing.vercel.app/blogs" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Blog - Florida Roofing | Expert Tips & Guides" />
+                <meta name="twitter:description" content="Discover expert roofing tips and stay updated with the latest trends in roofing materials and maintenance." />
+                <link rel="canonical" href="https://florida-roofing.vercel.app/blogs" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="h-[35vh] w-full bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat relative  font-bold border-b-2 border-primary">
                 <div className="bg-gradient-to-b to-black/90 from-black/50 absolute w-full h-full" />
                 <div className="flex flex-col w-full h-full justify-center items-center z-10 relative  ">
