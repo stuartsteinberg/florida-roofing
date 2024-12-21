@@ -70,7 +70,9 @@ export default async function BlogList() {
                                     <span key={index}>{block.children[0]?.text}</span>
                                 ))}
                             </p>
-                            <Link href={`/blogs/${post.slug.current}`} className="text-black hover:underline" >Read More</Link>
+                            <Link href={`/blogs/${post.slug.current}`}  aria-label={`Read more about ${post.title} `} className="text-black hover:underline" >
+                                Continue Reading
+                            </Link>
                         </div>
                         <p className="py-3 border-t text-center text-black " >{new Date(post.publishedAt).toDateString()}</p>
                     </div>

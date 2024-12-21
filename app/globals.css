@@ -12,29 +12,28 @@ body {
 
 /* Headings inside the blog container */
 .blog-container h1 {
-  @apply text-5xl font-bold leading-tight;
+  @apply text-5xl font-bold leading-tight xl:text-6xl lg:text-5xl md:text-4xl text-3xl;
 }
 
 .blog-container h2 {
-  @apply text-4xl font-semibold leading-snug mt-6;
+  @apply text-4xl font-semibold leading-snug mt-6 xl:text-5xl lg:text-4xl md:text-3xl text-2xl;
 }
 
 .blog-container h3 {
-  @apply text-3xl font-medium leading-snug mt-4;
+  @apply text-3xl font-medium leading-snug mt-4 xl:text-4xl lg:text-3xl md:text-2xl text-xl;
 }
 
 .blog-container h4 {
-  @apply text-2xl font-medium leading-snug mt-3;
+  @apply text-2xl font-medium leading-snug mt-3 xl:text-3xl lg:text-2xl md:text-xl text-lg;
 }
 
 .blog-container h5 {
-  @apply text-xl font-medium leading-snug mt-2;
+  @apply text-xl font-medium leading-snug mt-2 xl:text-2xl lg:text-xl md:text-lg text-base;
 }
 
 .blog-container h6 {
-  @apply text-lg font-medium leading-snug mt-1;
+  @apply text-lg font-medium leading-snug mt-1 xl:text-xl lg:text-lg md:text-base text-sm;
 }
-
 /* Paragraphs inside the blog container */
 .blog-container p {
   @apply text-base leading-relaxed mt-4;

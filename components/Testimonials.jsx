@@ -19,7 +19,7 @@ import Slider from "react-slick";
               <div className="flex justify-between items-center">
                 <div>
                   <p className="font-bold">Alex Jones</p>
-                  <p className="font-extralight text-xs text-white/30 ">June 13, 2024</p>
+                  <p className="font-extralight text-xs text-white/70 ">June 13, 2024</p>
                 </div>
                 <FcGoogle size={24} />
               </div>
